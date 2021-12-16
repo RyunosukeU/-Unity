@@ -11,7 +11,7 @@ y座標が５より大きくなったら自分自身を破壊するようにし�
 */
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] float bulletSpeed = 0.1f;
+    [SerializeField] float bulletSpeed = 0.3f;
 
     void Update()
     {

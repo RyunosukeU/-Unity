@@ -9,13 +9,13 @@ public class KurimController : MonoBehaviour {
 
         if (Input.GetKey (KeyCode.LeftArrow)) {
 			transform.Translate (-0.1f, 0, 0);
-            if (transform.position.x < -2.4 ) {
+            if (transform.position.x < -8.5 ) {
                 transform.Translate (0.1f, 0, 0);
 		    }
 		}
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			transform.Translate ( 0.1f, 0, 0);
-            if (transform.position.x > 2.4) {
+            if (transform.position.x > 8.5) {
                 transform.Translate (-0.1f, 0, 0);
 		    }
 		}
