@@ -4,8 +4,22 @@ using System.Collections;
 public class KurimController : MonoBehaviour {
 
 	public GameObject bulletPrefab;
+
+	public bool isGameover=false;
+
+	public void GameOver (){
+
+		isGameover=true;
+
+	}
+
+
+
         
 	void Update () {
+
+
+		if (isGameover==false){
 
         if (Input.GetKey (KeyCode.LeftArrow)) {
 			transform.Translate (-0.1f, 0, 0);
@@ -21,6 +35,7 @@ public class KurimController : MonoBehaviour {
 		}
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			Instantiate (bulletPrefab, transform.position, Quaternion.identity);
+		}
 		}
     }
 }
